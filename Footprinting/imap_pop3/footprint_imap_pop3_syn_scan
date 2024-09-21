@@ -1,0 +1,17 @@
+# Nmap 7.94SVN scan initiated Mon Sep  9 22:43:41 2024 as: nmap -T5 -p- -sS -oN ../footprint_imap_pop3_syn_scan 10.129.214.85
+Warning: 10.129.214.85 giving up on port because retransmission cap hit (2).
+Nmap scan report for 10.129.214.85
+Host is up (0.033s latency).
+Not shown: 64764 closed tcp ports (reset), 762 filtered tcp ports (no-response)
+PORT      STATE SERVICE
+22/tcp    open  ssh
+25/tcp    open  smtp
+53/tcp    open  domain
+110/tcp   open  pop3
+143/tcp   open  imap
+993/tcp   open  imaps
+995/tcp   open  pop3s
+3306/tcp  open  mysql
+33060/tcp open  mysqlx
+
+# Nmap done at Mon Sep  9 22:44:21 2024 -- 1 IP address (1 host up) scanned in 39.68 seconds

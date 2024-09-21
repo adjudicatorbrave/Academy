@@ -1,0 +1,18 @@
+# Nmap 7.94SVN scan initiated Mon Sep 16 22:41:06 2024 as: nmap -T5 -p3306 -sV -sC -oN footprint_mysql_scan 10.129.31.237
+Nmap scan report for 10.129.31.237
+Host is up (0.017s latency).
+
+PORT     STATE SERVICE VERSION
+3306/tcp open  mysql   MySQL 8.0.27-0ubuntu0.20.04.1
+| mysql-info: 
+|   Protocol: 10
+|   Version: 8.0.27-0ubuntu0.20.04.1
+|   Thread ID: 10
+|   Capabilities flags: 65535
+|   Some Capabilities: Support41Auth, InteractiveClient, SwitchToSSLAfterHandshake, FoundRows, LongColumnFlag, Speaks41ProtocolOld, LongPassword, SupportsLoadDataLocal, Speaks41ProtocolNew, SupportsTransactions, SupportsCompression, DontAllowDatabaseTableColumn, ODBCClient, IgnoreSpaceBeforeParenthesis, IgnoreSigpipes, ConnectWithDatabase, SupportsAuthPlugins, SupportsMultipleStatments, SupportsMultipleResults
+|   Status: Autocommit
+|   Salt: 2pD\x169	\x04*e;!Y\x13\x01Mc8)\x13 
+|_  Auth Plugin Name: caching_sha2_password
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Sep 16 22:41:45 2024 -- 1 IP address (1 host up) scanned in 38.87 seconds

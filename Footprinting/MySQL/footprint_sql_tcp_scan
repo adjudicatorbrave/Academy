@@ -1,0 +1,16 @@
+# Nmap 7.94SVN scan initiated Mon Sep 16 22:43:31 2024 as: nmap -T5 -p- -sT -oN footprint_sql_tcp_scan 10.129.31.237
+Nmap scan report for 10.129.31.237
+Host is up (0.024s latency).
+Not shown: 65526 closed tcp ports (conn-refused)
+PORT      STATE SERVICE
+22/tcp    open  ssh
+25/tcp    open  smtp
+53/tcp    open  domain
+110/tcp   open  pop3
+143/tcp   open  imap
+993/tcp   open  imaps
+995/tcp   open  pop3s
+3306/tcp  open  mysql
+33060/tcp open  mysqlx
+
+# Nmap done at Mon Sep 16 22:43:44 2024 -- 1 IP address (1 host up) scanned in 12.74 seconds

@@ -1,0 +1,8 @@
+# Nmap 7.94SVN scan initiated Sat Aug 31 23:34:55 2024 as: nmap -T5 -p- -sA -oN footprint_nfs_ack_scan 10.129.99.214
+Warning: 10.129.99.214 giving up on port because retransmission cap hit (2).
+Nmap scan report for 10.129.99.214
+Host is up (0.030s latency).
+All 65535 scanned ports on 10.129.99.214 are in ignored states.
+Not shown: 65322 unfiltered tcp ports (reset), 213 filtered tcp ports (no-response)
+
+# Nmap done at Sat Aug 31 23:37:33 2024 -- 1 IP address (1 host up) scanned in 158.07 seconds

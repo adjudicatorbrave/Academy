@@ -1,0 +1,49 @@
+$ sudo nmap 10.129.132.174 -p25 --script smtp-open-relay -v
+[sudo] password for john: 
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2024-09-05 22:47 EDT
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 22:47
+Completed NSE at 22:47, 0.00s elapsed
+Initiating Ping Scan at 22:47
+Scanning 10.129.132.174 [4 ports]
+Completed Ping Scan at 22:47, 0.05s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 22:47
+Completed Parallel DNS resolution of 1 host. at 22:47, 0.01s elapsed
+Initiating SYN Stealth Scan at 22:47
+Scanning 10.129.132.174 [1 port]
+Discovered open port 25/tcp on 10.129.132.174
+Completed SYN Stealth Scan at 22:47, 0.05s elapsed (1 total ports)
+NSE: Script scanning 10.129.132.174.
+Initiating NSE at 22:47
+Completed NSE at 22:47, 7.65s elapsed
+Nmap scan report for 10.129.132.174
+Host is up (0.024s latency).
+
+PORT   STATE SERVICE
+25/tcp open  smtp
+| smtp-open-relay: Server is an open relay (16/16 tests)
+|  MAIL FROM:<> -> RCPT TO:<relaytest@nmap.scanme.org>
+|  MAIL FROM:<antispam@nmap.scanme.org> -> RCPT TO:<relaytest@nmap.scanme.org>
+|  MAIL FROM:<antispam@InFreight> -> RCPT TO:<relaytest@nmap.scanme.org>
+|  MAIL FROM:<antispam@[10.129.132.174]> -> RCPT TO:<relaytest@nmap.scanme.org>
+|  MAIL FROM:<antispam@[10.129.132.174]> -> RCPT TO:<relaytest%nmap.scanme.org@[10.129.132.174]>
+|  MAIL FROM:<antispam@[10.129.132.174]> -> RCPT TO:<relaytest%nmap.scanme.org@InFreight>
+|  MAIL FROM:<antispam@[10.129.132.174]> -> RCPT TO:<"relaytest@nmap.scanme.org">
+|  MAIL FROM:<antispam@[10.129.132.174]> -> RCPT TO:<"relaytest%nmap.scanme.org">
+|  MAIL FROM:<antispam@[10.129.132.174]> -> RCPT TO:<relaytest@nmap.scanme.org@[10.129.132.174]>
+|  MAIL FROM:<antispam@[10.129.132.174]> -> RCPT TO:<"relaytest@nmap.scanme.org"@[10.129.132.174]>
+|  MAIL FROM:<antispam@[10.129.132.174]> -> RCPT TO:<relaytest@nmap.scanme.org@InFreight>
+|  MAIL FROM:<antispam@[10.129.132.174]> -> RCPT TO:<@[10.129.132.174]:relaytest@nmap.scanme.org>
+|  MAIL FROM:<antispam@[10.129.132.174]> -> RCPT TO:<@InFreight:relaytest@nmap.scanme.org>
+|  MAIL FROM:<antispam@[10.129.132.174]> -> RCPT TO:<nmap.scanme.org!relaytest>
+|  MAIL FROM:<antispam@[10.129.132.174]> -> RCPT TO:<nmap.scanme.org!relaytest@[10.129.132.174]>
+|_ MAIL FROM:<antispam@[10.129.132.174]> -> RCPT TO:<nmap.scanme.org!relaytest@InFreight>
+
+NSE: Script Post-scanning.
+Initiating NSE at 22:47
+Completed NSE at 22:47, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 7.90 seconds
+           Raw packets sent: 5 (196B) | Rcvd: 2 (84B)
+

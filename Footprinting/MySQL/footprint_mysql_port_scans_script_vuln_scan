@@ -1,0 +1,14 @@
+# Nmap 7.94SVN scan initiated Mon Sep 16 22:44:41 2024 as: nmap -T5 -p 3306 -script vuln -oN footprint_mysql_port_scans_script_vuln_scan 10.129.31.237
+Pre-scan script results:
+| broadcast-avahi-dos: 
+|   Discovered hosts:
+|     224.0.0.251
+|   After NULL UDP avahi packet DoS (CVE-2011-1002).
+|_  Hosts are all up (not vulnerable).
+Nmap scan report for 10.129.31.237
+Host is up (0.026s latency).
+
+PORT     STATE SERVICE
+3306/tcp open  mysql
+
+# Nmap done at Mon Sep 16 22:46:24 2024 -- 1 IP address (1 host up) scanned in 102.75 seconds

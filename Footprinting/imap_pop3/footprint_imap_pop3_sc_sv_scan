@@ -1,0 +1,41 @@
+# Nmap 7.94SVN scan initiated Mon Sep  9 22:43:11 2024 as: nmap -T5 -p 110,995,143,993 -sC -sV -A -oN ../footprint_imap_pop3_sc_sv_scan 10.129.214.85
+Nmap scan report for 10.129.214.85
+Host is up (0.027s latency).
+
+PORT    STATE SERVICE  VERSION
+110/tcp open  pop3     Dovecot pop3d
+|_pop3-capabilities: PIPELINING UIDL SASL AUTH-RESP-CODE CAPA TOP STLS RESP-CODES
+| ssl-cert: Subject: commonName=dev.inlanefreight.htb/organizationName=InlaneFreight Ltd/stateOrProvinceName=London/countryName=UK
+| Not valid before: 2021-11-08T23:10:05
+|_Not valid after:  2295-08-23T23:10:05
+|_ssl-date: TLS randomness does not represent time
+143/tcp open  imap     Dovecot imapd
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=dev.inlanefreight.htb/organizationName=InlaneFreight Ltd/stateOrProvinceName=London/countryName=UK
+| Not valid before: 2021-11-08T23:10:05
+|_Not valid after:  2295-08-23T23:10:05
+|_imap-capabilities: LOGINDISABLEDA0001 more STARTTLS post-login LITERAL+ listed OK ENABLE IDLE ID capabilities have SASL-IR LOGIN-REFERRALS IMAP4rev1 Pre-login
+993/tcp open  ssl/imap Dovecot imapd
+| ssl-cert: Subject: commonName=dev.inlanefreight.htb/organizationName=InlaneFreight Ltd/stateOrProvinceName=London/countryName=UK
+| Not valid before: 2021-11-08T23:10:05
+|_Not valid after:  2295-08-23T23:10:05
+|_imap-capabilities: more have post-login LITERAL+ listed OK ENABLE IDLE ID capabilities AUTH=PLAINA0001 SASL-IR IMAP4rev1 LOGIN-REFERRALS Pre-login
+|_ssl-date: TLS randomness does not represent time
+995/tcp open  ssl/pop3 Dovecot pop3d
+|_pop3-capabilities: PIPELINING UIDL USER AUTH-RESP-CODE CAPA TOP SASL(PLAIN) RESP-CODES
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=dev.inlanefreight.htb/organizationName=InlaneFreight Ltd/stateOrProvinceName=London/countryName=UK
+| Not valid before: 2021-11-08T23:10:05
+|_Not valid after:  2295-08-23T23:10:05
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Linux 5.0 (97%), Linux 4.15 - 5.8 (96%), Linux 5.3 - 5.4 (95%), Linux 2.6.32 (95%), Linux 5.0 - 5.5 (95%), Linux 3.1 (95%), Linux 3.2 (95%), AXIS 210A or 211 Network Camera (Linux 2.6.17) (95%), ASUS RT-N56U WAP (Linux 3.4) (93%), Linux 3.16 (93%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 2 hops
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT      ADDRESS
+1   28.40 ms 10.10.14.1
+2   28.53 ms 10.129.214.85
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Sep  9 22:43:30 2024 -- 1 IP address (1 host up) scanned in 18.51 seconds

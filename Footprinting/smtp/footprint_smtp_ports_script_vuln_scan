@@ -1,0 +1,16 @@
+# Nmap 7.94SVN scan initiated Thu Sep  5 22:52:32 2024 as: nmap -T5 -p 25 -script vuln -oN footprint_smtp_ports_script_vuln_scan 10.129.132.174
+Pre-scan script results:
+| broadcast-avahi-dos: 
+|   Discovered hosts:
+|     224.0.0.251
+|   After NULL UDP avahi packet DoS (CVE-2011-1002).
+|_  Hosts are all up (not vulnerable).
+Nmap scan report for 10.129.132.174
+Host is up (0.031s latency).
+
+PORT   STATE SERVICE
+25/tcp open  smtp
+| smtp-vuln-cve2010-4344: 
+|_  The SMTP server is not Exim: NOT VULNERABLE
+
+# Nmap done at Thu Sep  5 22:54:41 2024 -- 1 IP address (1 host up) scanned in 128.57 seconds

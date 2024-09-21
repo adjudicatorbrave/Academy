@@ -1,0 +1,27 @@
+# Nmap 7.94SVN scan initiated Mon Sep 16 22:44:41 2024 as: nmap -T5 -p 3306 -sC -sV -A -oN footprint_mysql_port_scans_sc_sv_scan 10.129.31.237
+Nmap scan report for 10.129.31.237
+Host is up (0.022s latency).
+
+PORT     STATE SERVICE VERSION
+3306/tcp open  mysql   MySQL 8.0.27-0ubuntu0.20.04.1
+| mysql-info: 
+|   Protocol: 10
+|   Version: 8.0.27-0ubuntu0.20.04.1
+|   Thread ID: 20
+|   Capabilities flags: 65535
+|   Some Capabilities: DontAllowDatabaseTableColumn, Support41Auth, IgnoreSpaceBeforeParenthesis, SupportsTransactions, FoundRows, InteractiveClient, LongPassword, IgnoreSigpipes, SupportsCompression, Speaks41ProtocolOld, SwitchToSSLAfterHandshake, Speaks41ProtocolNew, SupportsLoadDataLocal, LongColumnFlag, ConnectWithDatabase, ODBCClient, SupportsAuthPlugins, SupportsMultipleStatments, SupportsMultipleResults
+|   Status: Autocommit
+|   Salt: \x08/V\x07j-P:Oe6`KrfT\x05n.-
+|_  Auth Plugin Name: caching_sha2_password
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Linux 4.15 - 5.8 (96%), Linux 5.0 (96%), Linux 3.1 (95%), Linux 3.2 (95%), Linux 5.3 - 5.4 (95%), AXIS 210A or 211 Network Camera (Linux 2.6.17) (95%), Linux 2.6.32 (94%), Linux 5.0 - 5.5 (94%), ASUS RT-N56U WAP (Linux 3.4) (93%), Linux 3.16 (93%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 2 hops
+
+TRACEROUTE (using port 3306/tcp)
+HOP RTT      ADDRESS
+1   25.87 ms 10.10.14.1
+2   25.98 ms 10.129.31.237
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Sep 16 22:45:09 2024 -- 1 IP address (1 host up) scanned in 27.66 seconds

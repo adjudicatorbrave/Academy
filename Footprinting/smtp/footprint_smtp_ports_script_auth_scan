@@ -1,0 +1,19 @@
+# Nmap 7.94SVN scan initiated Thu Sep  5 22:52:32 2024 as: nmap -T5 -p 25 -script auth -oN footprint_smtp_ports_script_auth_scan 10.129.132.174
+Nmap scan report for 10.129.132.174
+Host is up (0.031s latency).
+
+PORT   STATE SERVICE
+25/tcp open  smtp
+| smtp-enum-users: 
+|   root
+|   admin
+|   administrator
+|   webadmin
+|   sysadmin
+|   netadmin
+|   guest
+|   user
+|   web
+|_  test
+
+# Nmap done at Thu Sep  5 22:52:42 2024 -- 1 IP address (1 host up) scanned in 10.23 seconds
