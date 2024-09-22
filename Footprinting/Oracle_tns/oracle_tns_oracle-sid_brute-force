@@ -1,0 +1,11 @@
+# Nmap 7.94SVN scan initiated Sat Sep 21 16:06:38 2024 as: nmap -p1521 -sV -oN oracle_tns_oracle-sid_brute-force --open --script oracle-sid-brute 10.129.103.50
+Nmap scan report for 10.129.103.50
+Host is up (0.020s latency).
+
+PORT     STATE SERVICE    VERSION
+1521/tcp open  oracle-tns Oracle TNS listener 11.2.0.2.0 (unauthorized)
+| oracle-sid-brute: 
+|_  XE
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Sep 21 16:07:21 2024 -- 1 IP address (1 host up) scanned in 43.21 seconds

@@ -1,0 +1,8 @@
+# Nmap 7.94SVN scan initiated Sat Sep 21 15:35:06 2024 as: nmap -T5 -p- -sA -oN oracle_tns_ack_scan 10.129.205.19
+Warning: 10.129.205.19 giving up on port because retransmission cap hit (2).
+Nmap scan report for 10.129.205.19
+Host is up (0.024s latency).
+All 65535 scanned ports on 10.129.205.19 are in ignored states.
+Not shown: 64973 unfiltered tcp ports (reset), 562 filtered tcp ports (no-response)
+
+# Nmap done at Sat Sep 21 15:35:56 2024 -- 1 IP address (1 host up) scanned in 49.86 seconds
