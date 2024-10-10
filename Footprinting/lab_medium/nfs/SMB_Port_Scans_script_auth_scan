@@ -1,0 +1,9 @@
+# Nmap 7.94SVN scan initiated Tue Oct  1 22:54:06 2024 as: nmap -T5 -p 139,445 -script auth -oN SMB_Port_Scans_script_auth_scan 10.129.185.241
+Nmap scan report for 10.129.185.241
+Host is up (0.026s latency).
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+
+# Nmap done at Tue Oct  1 22:54:11 2024 -- 1 IP address (1 host up) scanned in 5.51 seconds

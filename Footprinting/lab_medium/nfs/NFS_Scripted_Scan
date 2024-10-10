@@ -1,0 +1,32 @@
+# Nmap 7.94SVN scan initiated Mon Sep 30 23:36:15 2024 as: nmap --script nfs* -sV -p111,2049 -oN NFS_Scripted_Scan 10.129.165.6
+Nmap scan report for 10.129.165.6
+Host is up (0.027s latency).
+
+PORT     STATE SERVICE  VERSION
+111/tcp  open  rpcbind?
+| nfs-ls: Volume /TechSupport
+|   access: Read Lookup NoModify NoExtend NoDelete NoExecute
+| PERMISSION  UID         GID         SIZE   TIME                 FILENAME
+| rwx------   4294967294  4294967294  65536  2024-10-01T01:53:37  .
+| ??????????  ?           ?           ?      ?                    ..
+| rwx------   4294967294  4294967294  0      2021-11-10T15:19:28  ticket4238791283649.txt
+| rwx------   4294967294  4294967294  0      2021-11-10T15:19:28  ticket4238791283650.txt
+| rwx------   4294967294  4294967294  0      2021-11-10T15:19:28  ticket4238791283651.txt
+| rwx------   4294967294  4294967294  0      2021-11-10T15:19:28  ticket4238791283652.txt
+| rwx------   4294967294  4294967294  0      2021-11-10T15:19:28  ticket4238791283653.txt
+| rwx------   4294967294  4294967294  0      2021-11-10T15:19:28  ticket4238791283654.txt
+| rwx------   4294967294  4294967294  0      2021-11-10T15:19:29  ticket4238791283655.txt
+| rwx------   4294967294  4294967294  0      2021-11-10T15:19:29  ticket4238791283656.txt
+|_
+| nfs-statfs: 
+|   Filesystem    1K-blocks   Used        Available   Use%  Maxfilesize  Maxlink
+|_  /TechSupport  25468924.0  15096128.0  10372796.0  60%   16.0T        1023
+|_rpcinfo: ERROR: Script execution failed (use -d to debug)
+| nfs-showmount: 
+|_  /TechSupport 
+2049/tcp open  mountd   1-3 (RPC #100005)
+| nfs-showmount: 
+|_  /TechSupport 
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Sep 30 23:37:18 2024 -- 1 IP address (1 host up) scanned in 62.69 seconds

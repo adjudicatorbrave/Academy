@@ -1,0 +1,13 @@
+# Nmap 7.94SVN scan initiated Wed Oct  2 21:35:47 2024 as: nmap -sV -sC -p5985,5986 -oN WinRM_Port_Scan 10.129.145.179
+Nmap scan report for 10.129.145.179
+Host is up (0.022s latency).
+
+PORT     STATE  SERVICE VERSION
+5985/tcp open   http    Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-title: Not Found
+|_http-server-header: Microsoft-HTTPAPI/2.0
+5986/tcp closed wsmans
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Oct  2 21:35:54 2024 -- 1 IP address (1 host up) scanned in 7.06 seconds

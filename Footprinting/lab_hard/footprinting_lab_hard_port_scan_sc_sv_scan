@@ -1,0 +1,44 @@
+# Nmap 7.94SVN scan initiated Wed Oct  9 21:58:47 2024 as: nmap -T5 -p 22,118,143,993,995 -sC -sV -A -oN footprinting_lab_hard_port_scan_sc_sv_scan 10.129.223.204
+Nmap scan report for 10.129.223.204
+Host is up (0.025s latency).
+
+PORT    STATE  SERVICE  VERSION
+22/tcp  open   ssh      OpenSSH 8.2p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 3f:4c:8f:10:f1:ae:be:cd:31:24:7c:a1:4e:ab:84:6d (RSA)
+|   256 7b:30:37:67:50:b9:ad:91:c0:8f:f7:02:78:3b:7c:02 (ECDSA)
+|_  256 88:9e:0e:07:fe:ca:d0:5c:60:ab:cf:10:99:cd:6c:a7 (ED25519)
+118/tcp closed sqlserv
+143/tcp open   imap     Dovecot imapd (Ubuntu)
+|_imap-capabilities: more IDLE ID STARTTLS ENABLE post-login listed LITERAL+ AUTH=PLAINA0001 SASL-IR OK IMAP4rev1 capabilities have LOGIN-REFERRALS Pre-login
+| ssl-cert: Subject: commonName=NIXHARD
+| Subject Alternative Name: DNS:NIXHARD
+| Not valid before: 2021-11-10T01:30:25
+|_Not valid after:  2031-11-08T01:30:25
+|_ssl-date: TLS randomness does not represent time
+993/tcp open   ssl/imap Dovecot imapd (Ubuntu)
+|_imap-capabilities: more ID AUTH=PLAINA0001 ENABLE IDLE post-login LITERAL+ listed OK SASL-IR IMAP4rev1 capabilities have LOGIN-REFERRALS Pre-login
+| ssl-cert: Subject: commonName=NIXHARD
+| Subject Alternative Name: DNS:NIXHARD
+| Not valid before: 2021-11-10T01:30:25
+|_Not valid after:  2031-11-08T01:30:25
+|_ssl-date: TLS randomness does not represent time
+995/tcp open   ssl/pop3 Dovecot pop3d
+|_ssl-date: TLS randomness does not represent time
+|_pop3-capabilities: CAPA SASL(PLAIN) AUTH-RESP-CODE USER PIPELINING UIDL TOP RESP-CODES
+| ssl-cert: Subject: commonName=NIXHARD
+| Subject Alternative Name: DNS:NIXHARD
+| Not valid before: 2021-11-10T01:30:25
+|_Not valid after:  2031-11-08T01:30:25
+Aggressive OS guesses: Linux 5.0 (97%), Linux 4.15 - 5.8 (96%), Linux 5.3 - 5.4 (95%), Linux 2.6.32 (95%), Linux 5.0 - 5.5 (95%), Linux 3.1 (95%), Linux 3.2 (95%), AXIS 210A or 211 Network Camera (Linux 2.6.17) (95%), ASUS RT-N56U WAP (Linux 3.4) (93%), Linux 3.16 (93%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 2 hops
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT      ADDRESS
+1   29.17 ms 10.10.14.1
+2   29.37 ms 10.129.223.204
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Oct  9 21:59:06 2024 -- 1 IP address (1 host up) scanned in 19.11 seconds

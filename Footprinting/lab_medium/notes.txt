@@ -1,0 +1,40 @@
+
+Network File Share:
+	111/tcp   open  rpcbind
+	2049/tcp  open  nfs
+	- mounted a share, see a bunch of ticket....txt files in /TechSupport directory.
+	- NFS does not have any mountable drives
+
+
+SMB
+	139/tcp   open  netbios-ssn
+	445/tcp   open  microsoft-ds
+
+	- Server is available but does not allow anonmymous login
+
+Windows Management Instrumentation (WMI)
+	135/tcp   open  msrpc
+
+RDP
+	3389/tcp  open ms-wbt-server
+ 5    user="alex"
+ 6    password="lol123!mD"
+
+
+WinRM
+	5985/tcp  open  wsman
+
+	- Tried to connect via WinRM
+
+
+
+47001/tcp open  winrm
+49664/tcp open  unknown
+49665/tcp open  unknown
+49666/tcp open  unknown
+49667/tcp open  unknown
+49668/tcp open  unknown
+49679/tcp open  unknown
+49680/tcp open  unknown
+49681/tcp open  unknown
+

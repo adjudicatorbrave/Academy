@@ -1,0 +1,17 @@
+# Nmap 7.94SVN scan initiated Wed Sep 25 22:55:01 2024 as: nmap -T5 -p 21,22,53,2121 -script vuln -oN footprint_lab_easy_port_Scan_script_vuln_scan 10.129.51.177
+Pre-scan script results:
+| broadcast-avahi-dos: 
+|   Discovered hosts:
+|     224.0.0.251
+|   After NULL UDP avahi packet DoS (CVE-2011-1002).
+|_  Hosts are all up (not vulnerable).
+Nmap scan report for 10.129.51.177
+Host is up (0.57s latency).
+
+PORT     STATE SERVICE
+21/tcp   open  ftp
+22/tcp   open  ssh
+53/tcp   open  domain
+2121/tcp open  ccproxy-ftp
+
+# Nmap done at Wed Sep 25 22:58:03 2024 -- 1 IP address (1 host up) scanned in 182.10 seconds

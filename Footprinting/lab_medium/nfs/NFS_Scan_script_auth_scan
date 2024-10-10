@@ -1,0 +1,9 @@
+# Nmap 7.94SVN scan initiated Mon Sep 30 23:33:19 2024 as: nmap -T5 -p 111,2049, -script auth -oN NFS_Scan_script_auth_scan 10.129.165.6
+Nmap scan report for 10.129.165.6
+Host is up (0.20s latency).
+
+PORT     STATE SERVICE
+111/tcp  open  rpcbind
+2049/tcp open  nfs
+
+# Nmap done at Mon Sep 30 23:33:20 2024 -- 1 IP address (1 host up) scanned in 0.64 seconds

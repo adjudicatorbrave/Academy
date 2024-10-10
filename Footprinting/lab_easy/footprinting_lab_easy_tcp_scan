@@ -1,0 +1,11 @@
+# Nmap 7.94SVN scan initiated Wed Sep 25 22:50:18 2024 as: nmap -T5 -p- -sT -oN footprinting_lab_easy_tcp_scan 10.129.51.177
+Nmap scan report for 10.129.51.177
+Host is up (0.032s latency).
+Not shown: 65531 closed tcp ports (conn-refused)
+PORT     STATE SERVICE
+21/tcp   open  ftp
+22/tcp   open  ssh
+53/tcp   open  domain
+2121/tcp open  ccproxy-ftp
+
+# Nmap done at Wed Sep 25 22:50:38 2024 -- 1 IP address (1 host up) scanned in 19.96 seconds

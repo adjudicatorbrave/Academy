@@ -1,0 +1,17 @@
+# Nmap 7.94SVN scan initiated Wed Sep 25 22:55:01 2024 as: nmap -T5 -p 21,22,53,2121 -script auth -oN footprint_lab_easy_port_Scan_script_auth_scan 10.129.51.177
+Nmap scan report for 10.129.51.177
+Host is up (0.023s latency).
+
+PORT     STATE SERVICE
+21/tcp   open  ftp
+22/tcp   open  ssh
+| ssh-auth-methods: 
+|   Supported authentication methods: 
+|     publickey
+|_    password
+| ssh-publickey-acceptance: 
+|_  Accepted Public Keys: No public keys accepted
+53/tcp   open  domain
+2121/tcp open  ccproxy-ftp
+
+# Nmap done at Wed Sep 25 22:55:07 2024 -- 1 IP address (1 host up) scanned in 6.70 seconds

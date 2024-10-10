@@ -1,0 +1,26 @@
+# Nmap 7.94SVN scan initiated Thu Sep 26 23:02:20 2024 as: nmap -T5 -p 111,135,139,445,2049,3389,5985,25400,38550,47001,49664,49665,49666,49667,49668,49679,49680,49681,63283, -script auth -oN footprinting_lab_medium_port_scan_script_auth_scan 10.129.204.1
+Nmap scan report for 10.129.204.1
+Host is up (0.023s latency).
+
+PORT      STATE  SERVICE
+111/tcp   open   rpcbind
+135/tcp   open   msrpc
+139/tcp   open   netbios-ssn
+445/tcp   open   microsoft-ds
+2049/tcp  open   nfs
+3389/tcp  open   ms-wbt-server
+5985/tcp  open   wsman
+25400/tcp closed unknown
+38550/tcp closed unknown
+47001/tcp open   winrm
+49664/tcp open   unknown
+49665/tcp open   unknown
+49666/tcp open   unknown
+49667/tcp open   unknown
+49668/tcp open   unknown
+49679/tcp open   unknown
+49680/tcp open   unknown
+49681/tcp open   unknown
+63283/tcp closed unknown
+
+# Nmap done at Thu Sep 26 23:02:25 2024 -- 1 IP address (1 host up) scanned in 5.64 seconds

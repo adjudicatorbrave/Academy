@@ -1,0 +1,23 @@
+# Nmap 7.94SVN scan initiated Fri Sep 27 22:41:27 2024 as: nmap -sV -sC -p3389 -oN rdp_port_scripted_scan --script rdp* 10.129.72.154
+Nmap scan report for 10.129.72.154
+Host is up (0.15s latency).
+
+PORT     STATE SERVICE       VERSION
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+| rdp-enum-encryption: 
+|   Security layer
+|     CredSSP (NLA): SUCCESS
+|     CredSSP with Early User Auth: SUCCESS
+|_    RDSTLS: SUCCESS
+| rdp-ntlm-info: 
+|   Target_Name: WINMEDIUM
+|   NetBIOS_Domain_Name: WINMEDIUM
+|   NetBIOS_Computer_Name: WINMEDIUM
+|   DNS_Domain_Name: WINMEDIUM
+|   DNS_Computer_Name: WINMEDIUM
+|   Product_Version: 10.0.17763
+|_  System_Time: 2024-09-28T02:41:36+00:00
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Sep 27 22:41:38 2024 -- 1 IP address (1 host up) scanned in 10.32 seconds
