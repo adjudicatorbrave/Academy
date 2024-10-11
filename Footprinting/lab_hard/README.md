@@ -1,9 +1,7 @@
 
 # Footprinting Lab - Hard
 
-`
-Nmap 7.94SVN scan initiated Wed Oct  9 21:58:47 2024 as: nmap -T5 -p 22,118,143,993,995 -script vuln -oN footprinting_lab_hard_port_scan_script_vuln_scan 10.129.223.204
-Pre-scan script results:
+`Pre-scan script results:
 | broadcast-avahi-dos: 
 |   Discovered hosts:
 |     224.0.0.251
