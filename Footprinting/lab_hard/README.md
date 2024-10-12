@@ -13,6 +13,7 @@
   * 161 - net-snmp SNMPv3 server
     * `onesixtyone -c ~/HTB/Tools/SecLists/Discovery/SNMP/snmp-onesixtyone.txt 10.129.71.172`
     * `10.129.71.172 [backup] Linux NIXHARD 5.4.0-90-generic #101-Ubuntu SMP Fri Oct 15 20:00:55 UTC 2021 x86_64`
+    * `snmpwalk -v2c -c backup 10.129.71.172 > snmpwalk_output`
 
   
 * Host Iis Unbuntu and name is NIXHARD
