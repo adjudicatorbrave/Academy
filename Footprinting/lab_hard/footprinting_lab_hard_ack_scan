@@ -1,21 +1,7 @@
-# Nmap 7.94SVN scan initiated Wed Oct  9 21:51:10 2024 as: nmap -T5 -p- -sA -oN footprinting_lab_hard_ack_scan 10.129.223.204
-Warning: 10.129.223.204 giving up on port because retransmission cap hit (2).
-Nmap scan report for 10.129.223.204
-Host is up (0.035s latency).
-Not shown: 65522 unfiltered tcp ports (reset)
-PORT      STATE    SERVICE
-2704/tcp  filtered sms-remctrl
-3458/tcp  filtered d3winosfi
-7708/tcp  filtered scinet
-7790/tcp  filtered unknown
-15721/tcp filtered unknown
-21605/tcp filtered unknown
-22802/tcp filtered unknown
-23740/tcp filtered unknown
-24946/tcp filtered unknown
-34059/tcp filtered unknown
-34129/tcp filtered unknown
-41167/tcp filtered unknown
-62730/tcp filtered unknown
+# Nmap 7.94SVN scan initiated Fri Oct 11 22:31:39 2024 as: nmap -T5 -p- -sA -oN footprinting_lab_hard_ack_scan 10.129.71.172
+Nmap scan report for 10.129.71.172
+Host is up (0.031s latency).
+All 65535 scanned ports on 10.129.71.172 are in ignored states.
+Not shown: 65439 unfiltered tcp ports (reset), 96 filtered tcp ports (no-response)
 
-# Nmap done at Wed Oct  9 21:51:48 2024 -- 1 IP address (1 host up) scanned in 38.58 seconds
+# Nmap done at Fri Oct 11 22:32:14 2024 -- 1 IP address (1 host up) scanned in 35.92 seconds
