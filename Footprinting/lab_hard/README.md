@@ -9,5 +9,8 @@
     * Authentication methods supported are publickey and passwords.
   * 143 and 993 - imap
   * 118 amd 995 - pop3s
- 
+
+* Host
+ * Running an Unbuntu server
+ * name seems to be nixhard
 
