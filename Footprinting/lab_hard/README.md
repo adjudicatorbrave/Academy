@@ -11,7 +11,4 @@
    * Dovecot imapd
   * 118 amd 995 - pop3s
    * Dovecot pop3
-
-* Host
-* Running an Unbuntu server
-* name seems to be NIXHARD
+* Host Iis Unbuntu and name is NIXHARD
