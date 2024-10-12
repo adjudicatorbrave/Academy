@@ -13,5 +13,5 @@
    * Dovecot pop3
 
 * Host
- * Running an Unbuntu server
- * name seems to be NIXHARD
+* Running an Unbuntu server
+* name seems to be NIXHARD
