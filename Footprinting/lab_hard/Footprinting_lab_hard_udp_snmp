@@ -1,0 +1,15 @@
+# Nmap 7.94SVN scan initiated Fri Oct 11 23:44:20 2024 as: nmap -sU -p161 -sC -sV -oN Footprinting_lab_hard_udp_snmp 10.129.71.172
+Nmap scan report for 10.129.71.172
+Host is up (0.026s latency).
+
+PORT    STATE SERVICE VERSION
+161/udp open  snmp    net-snmp; net-snmp SNMPv3 server
+| snmp-info: 
+|   enterprise: net-snmp
+|   engineIDFormat: unknown
+|   engineIDData: 5b99e75a10288b6100000000
+|   snmpEngineBoots: 11
+|_  snmpEngineTime: 1h45m28s
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Oct 11 23:44:31 2024 -- 1 IP address (1 host up) scanned in 10.46 seconds
