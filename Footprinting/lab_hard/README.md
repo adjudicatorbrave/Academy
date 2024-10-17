@@ -16,7 +16,7 @@
     * `snmpwalk -v2c -c backup 10.129.71.172 > snmpwalk_output`
     * Captured username and password `tom NMds732Js2761"`
 * Used captured username and password to log into system
-   * `ssh -v tom@10.129.57.135 -o PreferredAuthentications=password`
+   * `ssh -v tom@inlanefreight.htb -o PreferredAuthentications=password`
 
   
 * Host Iis Unbuntu and name is NIXHARD
