@@ -15,6 +15,8 @@
     * `10.129.71.172 [backup] Linux NIXHARD 5.4.0-90-generic #101-Ubuntu SMP Fri Oct 15 20:00:55 UTC 2021 x86_64`
     * `snmpwalk -v2c -c backup 10.129.71.172 > snmpwalk_output`
     * Captured username and password `tom NMds732Js2761"`
+* Used captured username and password to log into system
+   * `ssh -v tom@10.129.57.135 -o PreferredAuthentications=password`
 
   
 * Host Iis Unbuntu and name is NIXHARD
